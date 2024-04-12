@@ -1,0 +1,68 @@
+@import url('reset.css');
+
+
+.header {
+}
+.header__container {
+}
+.title {
+    color: rgba(28, 145, 19, 0.8);
+}
+.navigation {
+}
+.navigation__list {
+}
+.list {
+}
+.list__item {
+    color: rgba(188, 41, 26, 0.96);
+}
+
+
+.main {
+}
+.location {
+}
+.location__container {
+}
+.location__title {
+    color: rgba(45, 26, 188, 0.96);
+}
+.location__text {
+    color: rgba(26, 148, 206, 0.96);
+}
+.location__list{
+    color: rgba(25, 74, 97, 0.96);
+
+}
+
+.relief {
+}
+.relief__container {
+}
+.relief__title {
+    color: rgba(111, 71, 14, 0.96);
+}
+.relief__text {
+    color: rgba(181, 116, 23, 0.96);
+}
+.climat {
+}
+.climat__container {
+}
+.climat__title {
+    color: rgba(122, 153, 21, 0.96);
+}
+.climat__text {
+    color: rgba(185, 233, 29, 0.96);
+}
+.Watercourses {
+}
+.Watercourses__container {
+}
+.Watercourses__title {
+    color: rgba(12, 13, 95, 0.96);
+}
+.Watercourses__text {
+    color: rgba(36, 38, 206, 0.75);
+}
