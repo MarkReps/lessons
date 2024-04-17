@@ -18,7 +18,7 @@
 }
 @font-face {
     font-family: "Rubik";
-    src: url("../fonts/Rubik-bold.woff2") format("woff2");
+    src: url("../fonts/Rubik-Bold.woff2") format("woff2");
     font-style: normal;
     font-weight: 700;
 }
@@ -43,7 +43,7 @@
 }
 @font-face {
     font-family: "Josefin Sans";
-    src: url("../fonts/JosefinSans-bold.woff2") format("woff2");
+    src: url("../fonts/JosefinSans-Bold.woff2") format("woff2");
     font-style: normal;
     font-weight: 700;
 }
