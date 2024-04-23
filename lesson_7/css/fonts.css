@@ -3,28 +3,28 @@
     src: url("../fonts/Rubik-Light.woff2") format("woff2");
     font-style: normal;
     font-weight: 300;
-    display: swap;
+    font-display: swap;
 }
 @font-face {
     font-family: "Rubik";
     src: url("../fonts/Rubik-Regular.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
-    display: swap;
+    font-display: swap;
 }
 @font-face {
     font-family: "Rubik";
     src: url("../fonts/Rubik-Medium.woff2") format("woff2");
     font-style: normal;
     font-weight: 500;
-    display: swap;
+    font-display: swap;
 }
 @font-face {
     font-family: "Rubik";
     src: url("../fonts/Rubik-Bold.woff2") format("woff2");
     font-style: normal;
     font-weight: 700;
-    display: swap;
+    font-display: swap;
 }
 
 @font-face {
@@ -32,7 +32,7 @@
     src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
-    display: swap;
+    font-display: swap;
 }
 
 @font-face {
@@ -40,5 +40,5 @@
     src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2");
     font-style: normal;
     font-weight: 600;
-    display: swap;
+    font-display: swap;
 }
