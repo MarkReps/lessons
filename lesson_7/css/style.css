@@ -1,0 +1,349 @@
+/* підключення шрифтів */
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+/*обнуляючі стилі */
+@import url('reset.css');
+
+body{
+    background-color: #333;
+    font-family: "Rubik";
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+[class*="__container"]{
+    width: 1060px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+}
+.homework {
+}
+
+.homework__container {
+}
+.homework__content {
+    margin-top: 20px;
+}
+.homework__text {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.homework__text{
+
+}
+.homework__text > *:not(:last-child){
+    margin-bottom: 15px;
+}
+
+/* .homework__text p:last-child{
+    background-color: #000;
+}
+*/
+
+/* .homework__text p:nth-child(2n){
+    font-size: 40px;
+} */
+
+.homework__text p:last-of-type{
+    text-decoration: underline;
+}
+
+.homework__text p:first-child{
+    background-color: #1f1a1a;
+} 
+
+.link {
+    margin: 16px;
+    background-color: #198eb6;
+    padding: 10px 24px;
+    border-radius: 8px;
+    box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.link:hover{
+    background-color: #15a9db;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.link:active{
+    background-color: #0b4f66;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.link::before,
+.link::after{
+    content: "";
+    /* background-color: #fff; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.link::before{
+    background-color: red;
+    margin-right: 40px;
+}
+.link::after{
+    background-color: blue;
+    margin-left: 40px;
+}
+
+.game{
+}
+.game__container{
+    font-size: 0;
+}
+.game__line_1,
+.switch_line_1,
+.game__line_2,
+.game__line_3,
+.game__line_3,
+.game__line_4,
+.game__line_5 {
+    background-color: #15a9db;
+    display: inline-block;
+}
+.game__line_1{
+    display: block;
+    width: 60px;
+    height: 30px;
+}
+.switch_line_1 {
+    display: block;
+    width: 60px;
+    height: 30px;
+}
+.game__line_1:hover ~ .game__line_2,
+.switch_line_1:hover + .game__line_2,
+.game__line_2:hover{
+    visibility: visible;
+}
+.game__line_2{
+    vertical-align: top;
+    visibility: hidden;
+    /* display: inline-block; */
+    width: 1000px;
+    height: 60px;
+}
+
+.game__line_2:hover ~ .game__line_3,
+.game__line_3:hover{
+    visibility: visible;
+}
+
+.game__line_3{
+    visibility: hidden;
+    /* display: inline-block; */
+    height: 120px;
+    width: 30px; 
+}
+.game__line_3:hover + .game__line_4,
+.game__line_4:hover{
+    visibility: visible;
+}
+
+.game__line_4{
+    visibility: hidden;
+    width: 1030px;
+    height: 40px;
+}
+.game__line_5{
+    visibility: hidden;
+    width: 40px;
+    height: 300px;
+}
+
+.game__line_4:hover + .game__line_5,
+.game__line_5:hover{
+    visibility: visible;
+}
+
+.game__line_5:hover + .game__finish,
+.game__finish:hover{
+    visibility: visible;
+}
+.game__finish{
+    visibility: hidden;
+    width: 40px;
+    height: 50px;
+    background-color: red;
+}
+
+.game__finish:hover{
+    visibility: visible;
+    background-color: blue;
+}
+
+
+/* ======================= portfolio ========================= */
+
+.portfolio {
+    font-family: "Exo";
+}
+.portfolio__container {
+    width: 1270px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.portfolio__content {
+    text-align: center;
+    padding: 120px 60px;
+    color: #fff;
+}
+.portfolio__content > *:not(:last-child){
+    margin-bottom: 20px;
+}
+.portfolio__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 1.166; /* 70/60 */
+}
+
+.portfolio__title::after{
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    content: "";
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(65,248,6,1) 50%, rgba(36,3,251,1) 100%);
+    width: 100%;
+    max-width: 401px;
+}
+
+.portfolio__text {
+    font-size: 18px;
+    line-height: 2.22; /* 40/18 */
+}
+
+.portfolio__text:not(:last-child){
+    margin-bottom: 70px;
+}
+
+.portfolio__services {
+}
+.services {
+    font-family: "Orbitron";
+}
+.services >*:not(:last-child) {
+    margin-right: 60px;
+}
+.services__item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25; /* 25/20 */
+}
+
+.services__item::after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(65,248,6,1) 50%, rgba(36,3,251,1) 100%);
+    margin-left: 60px;
+    padding: 5px;
+}
+
+
+
+.ready {
+
+}
+.ready__container {
+    font-family: "Exo";
+    padding-bottom: 20px;
+}
+.ready__list {
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+}
+.ready__list > *:not(:last-child){
+    margin-right: 80px;
+}
+.ready__item{
+    display: inline-block;
+}
+.ready__item::before {
+    content: "";
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/portfolio/call.svg") center no-repeat;
+}
+.ready__item:nth-child(1)::before{
+    background: url("../img/portfolio/call.svg") center no-repeat;
+}
+.ready__item:nth-child(2)::before{
+    background: url("../img/portfolio/location.svg") center no-repeat;
+}
+.ready__item:nth-child(3)::before{
+    background: url("../img/portfolio/mail.svg") center no-repeat;
+}
+
+
+
+/* =============== krovato ================ */
+
+.krovato {
+    font-family: "Proxima Nova";
+    background-color: #F8F8F8;
+}
+.krovato__container {
+    padding: 75px 110px 40px;
+    width: 1290px;
+    color: #2b2929;
+}
+.krovato__container > *:not(:last-child){
+    margin-bottom: 40px;
+}
+.ckrovato__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2; /* 48/40 */
+}
+.krovato__image {
+    max-width: 1070px;
+    width: 100%;
+    border-radius: 8px;
+}
+.krovato__image{
+    max-width: 100%;
+}
+.krovato__text {
+    font-size: 16px;
+    line-height: 1.875; /* 30/16 */
+}
+.krovato__text>*:not(:last-child) {
+    margin-bottom: 30px;
+}
+.krovato__sub-title {
+    font-size: 20px;
+    line-height: 1.4; /* 28/20 */
+    font-weight: 600;
+}
+.krovato__sub-title:not(:last-child) {
+    margin-bottom: 30px;
+}
+.krovato__list {
+    font-size: 16px;
+    line-height: 1.875; /* 30/16 */
+}
+.krovato__list >*:not(:last-child){
+    margin-bottom: 20px;
+}
+.krovato__item {
+
+}
+
+.krovato__item::before{
+    content: "";
+    margin-right: 15px;
+    width: 27px;
+    height: 27px;
+    background: url("../img/krovato/check.svg") 0 0 / 100% no-repeat;
+}
