@@ -1,0 +1,48 @@
+/* підключення шрифтів */
+/* @import url("fonts.css"); */
+
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+/*обнуляючі стилі */
+@import url('reset.css');
+
+body{
+    background-color: #333;
+    font-family: "Rubik";
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+[class*="__container"]{
+    width: 1060px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.wrapper {
+}
+
+.homework {
+}
+.homework__container {
+
+}
+.homework__image {
+}
+.homework__image:not(:last-child){
+    margin-bottom: 20px;
+}
+.homework__image:last-child img{
+    max-width: 100%;
+}
+.homework__image img{
+    width: 100%;
+    max-width: 75px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.text {
+    /* padding: 25px; */
+    display: inline-block;
+    height: 100%;
+}
