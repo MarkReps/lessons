@@ -1,0 +1,21 @@
+/* підключення шрифтів */
+/* @import url("fonts.css"); */
+
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+/*обнуляючі стилі */
+@import url('reset.css');
+
+body{
+    background-color: #333;
+    font-family: "Rubik";
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+[class*="__container"]{
+    width: 1290px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
