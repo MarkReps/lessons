@@ -289,7 +289,7 @@ body.active .menu{
     width: 100%;
     z-index: 2;
 }
-.card__image--circle{
+.card__circle{
     height: 100%;
     width: 110%;
     position: absolute;
