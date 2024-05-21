@@ -311,5 +311,5 @@ body{
 }
 .card__body--origin:hover{
     transform-origin: 50px 50px;
-    rotate: 60deg;
+    transform: rotate(60deg);
 }
