@@ -21,7 +21,7 @@ body{
 }
 
 .wrapper {
-    /* overflow: clip; */
+    overflow: clip;
     min-height: 100%;
 }
 
