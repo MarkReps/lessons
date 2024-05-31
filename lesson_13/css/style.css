@@ -235,6 +235,7 @@ body{
 
 /* ========== HEADER BODY ========== */
 .body-header {
+    background: #fff;
     border-bottom: 2px solid #F8F8F8;
 }
 .body-header__container {
@@ -389,6 +390,7 @@ body{
 
 /* ========== HEADER BOTTOM ========== */
 .bottom-header {
+    background: #fff;
     padding-top: 18px;
     padding-bottom: 18px;
 }
