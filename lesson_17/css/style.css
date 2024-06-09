@@ -111,6 +111,9 @@ body{
     color: #000;
     font-size: 36px;
     font-weight: 700;
+    max-width: 75%;
+    max-height: 75%;
+    overflow: hidden;
 }
 .item-ecommerce__image {
     position: absolute;
@@ -120,8 +123,7 @@ body{
     height: 100%;
     border-radius: 20px;
     overflow: hidden;
-    transition: 0.3s ease;
-
+    transition: 0.3s ease; 
 }
 @media (any-hover:hover){
     .item-ecommerce:hover .item-ecommerce__image{
@@ -132,7 +134,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 407/289; 
+    aspect-ratio: 407/289;
 }
 
 @media (max-width:991.98px) {
