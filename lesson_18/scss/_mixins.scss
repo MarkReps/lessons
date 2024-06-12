@@ -1,3 +1,8 @@
+@function toPx($value){
+	$result: $value + px;
+	@return $result;
+}
+
 //Percent
 @function percent($px, $from: 100) {
 	$result: math.div($px, $from) * 100%;

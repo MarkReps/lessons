@@ -39,8 +39,8 @@ body{
     }
 }
 
-[class*="container"]{
-    max-width: $containerWidth; /*1270 + 30*/
+[class*="__container"]{
+    max-width: toPx($containerWidth); /*1270 + 30*/
     padding-left:15px;
     padding-right:15px;
     margin: 0 auto;
