@@ -40,7 +40,7 @@ body{
 }
 
 [class*="container"]{
-    max-width: $containerWidth+30px; /*1270 + 30*/
+    max-width: $containerWidth; /*1270 + 30*/
     padding-left:15px;
     padding-right:15px;
     margin: 0 auto;
