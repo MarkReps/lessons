@@ -118,8 +118,8 @@ body::-webkit-scrollbar-thumb:hover {
   background: #550183;
 }
 
-[class*=container] {
-  max-width: 1330px; /*1270 + 30*/
+[class*=__container] {
+  max-width: 1300px; /*1270 + 30*/
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -135,12 +135,19 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
   font-family: "Orbitron";
   padding-bottom: 55px;
   padding-top: 55px;
+  z-index: 20;
 }
 .header__container {
   display: -webkit-box;
@@ -184,11 +191,6 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-@media (max-width: 991.98px) {
-  .menu-header {
-    display: none;
-  }
-}
 .menu-header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,15 +201,18 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
 }
-@media (min-width: 991.98px) and (min-width: 81.25em) {
+@media (min-width: 81.25em) {
   .menu-header__list {
     -webkit-column-gap: 3.75rem;
        -moz-column-gap: 3.75rem;
             column-gap: 3.75rem;
   }
 }
-@media (min-width: 991.98px) and (min-width: 61.99875em) and (max-width: 81.25em) {
+@media (min-width: 61.99875em) and (max-width: 81.25em) {
   @supports ((-moz-column-gap: clamp( 1.25rem , -6.801262905rem  +  12.9861697292vw , 3.75rem )) or (column-gap: clamp( 1.25rem , -6.801262905rem  +  12.9861697292vw , 3.75rem ))) {
     .menu-header__list {
       -webkit-column-gap: clamp( 1.25rem , -6.801262905rem  +  12.9861697292vw , 3.75rem );
@@ -223,11 +228,26 @@ body::-webkit-scrollbar-thumb:hover {
     }
   }
 }
-@media (min-width: 991.98px) and (max-width: 61.99875em) {
+@media (max-width: 61.99875em) {
   .menu-header__list {
     -webkit-column-gap: 1.25rem;
        -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .menu-header__list {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 .menu-header__link {
@@ -238,6 +258,13 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+@media (max-width: 991.98px) {
+  .menu-header {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 .menu-header__link::before {
   content: "";
@@ -259,6 +286,21 @@ body::-webkit-scrollbar-thumb:hover {
     left: 0;
   }
 }
+@media (max-width: 991.98px) {
+  .menu-header {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    width: 100%;
+    z-index: 50;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+}
 
 .menu-icon {
   display: none;
@@ -269,6 +311,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 30px;
     height: 20px;
     position: relative;
+    z-index: 50;
   }
 }
 .menu-icon span {
@@ -291,6 +334,31 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   left: 0;
   border-radius: 12px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+  .menu-open .menu-icon span {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .menu-open .menu-icon::before {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 50%;
+  }
+  .menu-open .menu-icon::after {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 50%;
+  }
+  .menu-open .menu-header {
+    left: 0;
+  }
 }
 
 .social-header {
