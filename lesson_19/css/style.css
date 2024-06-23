@@ -1041,8 +1041,8 @@ body {
           align-items: center;
 }
 .footer-product-card__link svg {
-  width: 20pxpx;
-  height: 20pxpx;
+  width: 20px;
+  height: 20px;
   fill: #fff;
   stroke: currentColor;
   stroke-width: 0;
